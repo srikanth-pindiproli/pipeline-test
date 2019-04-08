@@ -1,3 +1,3 @@
 jenkins-shared-libraries {
-  name= = "pipeline-test"
+  name = "pipeline-test"
 }
