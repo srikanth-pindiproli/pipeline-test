@@ -4,13 +4,17 @@ pipeline {
 
   stages {
     stage ('Clone') {
-      checkout scm
+      steps {
+        checkout scm
+       }
     }
   }
   
   stage('Compile') {
-    withMaven(maven: 'Maven 3') {
-      sh 'mvn clean compile'
+    steps {
+      withMaven(maven: 'Maven 3') {
+        sh 'mvn clean compile'
+      }
     }
   }
 }
