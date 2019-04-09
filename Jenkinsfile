@@ -8,12 +8,12 @@ pipeline {
         checkout scm
        }
     }
-  }
   
-  stage('Compile') {
-    steps {
-      withMaven(maven: 'Maven 3') {
-        sh 'mvn clean compile'
+    stage('Compile') {
+      steps {
+        withMaven(maven: 'Maven 3') {
+          sh 'mvn clean compile'
+        }
       }
     }
   }
