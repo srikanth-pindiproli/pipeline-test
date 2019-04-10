@@ -27,4 +27,9 @@ public class HelloController {
   public ResponseEntity<String> hello(@PathVariable String guestName) {
     return new ResponseEntity<String>("Hello " + guestName + "!", HttpStatus.OK);
   }
+  
+  @GetMapping("/ping")
+  public ResponseEntity<String> ping() {
+    return new ResponseEntity<String>("pong", HttpStatus.OK);
+  }
 }
