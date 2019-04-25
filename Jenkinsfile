@@ -1,6 +1,7 @@
+@Library('springboot-devsecops-pipeline')
 
-springboot-devsecops {
+buildProject ({
   projectName = "pipeline-test" 
-}
+})
 
 
